@@ -1,6 +1,9 @@
 GCP Cloud Resume API Challenge
 Project Overview:
 
+![image](https://github.com/user-attachments/assets/949fa38b-5825-4c6b-9cd1-ccf270fbe677)
+
+
 This project demonstrates a Google Cloud Function (GCF) that fetches resume data from a Firestore database and returns it in JSON format. The project includes a CI/CD pipeline using GitHub Actions to automate the deployment process.
 
 Key Components:
