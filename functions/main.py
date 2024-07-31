@@ -15,7 +15,8 @@ def resume_fetch(request):
     logger.setLevel(logging.INFO)
 
     # Initialize Firebase Admin SDK
-    cred = credentials.Certificate('nitish-resume-api-cloud-firebase-adminsdk-53s4h-7a2db2226b.json')
+    cred = credentials.Certificate(os.environ['SERVICE_ACCOUNT_KEY'])  # Use environment variable
+
     try:
         firebase_admin.initialize_app(cred)
     except firebase_admin.exceptions.Error as e:
